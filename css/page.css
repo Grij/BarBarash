@@ -235,7 +235,7 @@ canvas {
 }
 
 .font-family-inherit {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: inherit
 }
 
 .font-size-inherit {
