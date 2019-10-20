@@ -1,7 +1,7 @@
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html {
-  font-family: sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
@@ -37,7 +37,7 @@ hr {
 }
 
 pre {
-  font-family: monospace,monospace;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1em
 }
 
@@ -62,7 +62,7 @@ b,strong {
 }
 
 code,kbd,samp {
-  font-family: monospace,monospace;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1em
 }
 
@@ -112,7 +112,7 @@ svg:not(:root) {
 }
 
 button,input,optgroup,select,textarea {
-  font-family: sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0
@@ -1324,7 +1324,7 @@ canvas {
 body {
   background: #1d1d1d;
   color: #fff;
-  font-family: Lora,serif;
+  font-family: 'Gothic A1', sans-serif;
   min-width: 315px;
   overflow-x: hidden;
   font-smooth: always;
