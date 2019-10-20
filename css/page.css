@@ -235,7 +235,7 @@ canvas {
 }
 
 .font-family-inherit {
-  font-family: inherit
+  font-family: 'Gothic A1', sans-serif;
 }
 
 .font-size-inherit {
@@ -2048,7 +2048,7 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .h1,.h2,.h3,h1,h2,h3 {
-  font-family: Playfair Display,serif
+  font-family: 'Gothic A1', sans-serif;
 }
 
 .h1,h1 {
@@ -2064,7 +2064,7 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .h4,.h5,.h6,h4,h5,h6 {
-  font-family: Lato,sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   letter-spacing: 0
 }
 
