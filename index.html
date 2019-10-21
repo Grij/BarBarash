@@ -2210,7 +2210,7 @@ h6 {
 	    margin: 35px auto;
 		padding: 10px;
 }
-input {
+input, .booking-form-time {
 	background: rgb(230, 228, 228);
 	width: 55%;
     border: none;
@@ -2255,7 +2255,7 @@ input {
     <ul class="list-reset m0 p0 ampstart-label">
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Главная</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="menu.html">Меню</a></li>
-          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Бронирование</a></li>
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#booking">Бронирование</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#locations">Контакты</a></li>
     </ul>
   </nav>
@@ -2349,7 +2349,8 @@ input {
                 <amp-img src="https://instagram.fiev25-1.fna.fbcdn.net/vp/d5469ade960498bbfcbd34f9a0d7e7a0/5E432C0C/t51.2885-15/sh0.08/e35/s640x640/29737392_361550581015383_7406239101256466432_n.jpg?_nc_ht=instagram.fiev25-1.fna.fbcdn.net&_nc_cat=103" width="345" height="345" alt=" " on="tap:lightbox" role="button" tabindex="0"></amp-img>
             </amp-carousel>
 
-      </article>
+	  </article>
+	  <p><a name="booking"></a></p>
   </main>
   <div class="pre-footer-block">
   <br>
@@ -2366,7 +2367,17 @@ input {
 					<input type="text" placeholder="Дата">
 					<br>
 					<br>
-					<input type="text" placeholder="Время">
+					<select required="" class="booking-form-time">
+						<option>&nbsp;&ensp;Время</option>
+								  <option value="18:00">&nbsp;&ensp;18:00</option>
+						<option value="18:30">&nbsp;&ensp;18:30</option>
+								  <option value="19:00">&nbsp;&ensp;19:00</option>
+						<option value="19:30">&nbsp;&ensp;19:30</option>
+								  <option value="20:00">&nbsp;&ensp;20:00</option>
+						<option value="20:30">&nbsp;&ensp;20:30</option>
+								  <option value="21:00">&nbsp;&ensp;21:00</option>
+						<option value="21:30">&nbsp;&ensp;21:30</option>
+										  </select>
 					<br>
 					<br>
 					<input type="text" placeholder="Количество гостей">
