@@ -2196,7 +2196,47 @@ h6 {
 	font-size: 3.125rem;
 	font-weight: inherit;
 	line-height: 1.12
-}</style>
+}
+.pre-footer-block {
+	/* border: solid red; */
+		display: block;
+		background: rgb(230, 228, 228);
+}
+.booking {
+		/* border: solid red; */
+		display: block;
+		color: #000;
+		max-width: 700px;
+	    margin: 35px auto;
+		padding: 10px;
+}
+input {
+	background: rgb(230, 228, 228);
+	width: 55%;
+    border: none;
+    outline: none;
+    height: 34px;
+    border-bottom: 1px solid #c5c5c5;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+	margin: 5px 5px 0 20px;
+}
+.booking-button {
+	width: 250px;
+    height: 50px;
+    line-height: 47px;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    cursor: pointer;
+	margin: 10px;
+}
+</style>
 </head>
 <body>
 
@@ -2296,7 +2336,8 @@ h6 {
               <h3 class="mb1">Киев</h3>
               <p class="mb0">ул. Нестора Махно 57<br>+38 067 333 22 99<br></p>
               <p class="mb0">Воскресенье-Четверг с 10:00-23:00<br>Пятница-Суббота с 10:00-02:00<br></p>
-            </div>
+			</div>
+			
             <h2 id="gallery" class="my4 theme2-anchored">Галерея</h2>
             <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
             <amp-carousel class="my2 mxn3" height="345" layout="fixed-height" type="carousel">
@@ -2310,6 +2351,34 @@ h6 {
 
       </article>
   </main>
+  <div class="pre-footer-block">
+  <br>
+			<p><a name="booking"></a></p>
+			<div class="booking">
+				<h3 class="mb1">Бронирование</h3>
+				<h4 class="mb1">Укажите интересующую вас дату, время
+					и количество гостей.</h4>
+					<br>
+					<br>
+					<input class="booking-inp" type="text" placeholder="Ваше имя">
+					<br>
+					<br>
+					<input type="text" placeholder="Дата">
+					<br>
+					<br>
+					<input type="text" placeholder="Время">
+					<br>
+					<br>
+					<input type="text" placeholder="Количество гостей">
+					<br>
+					<br>
+					<input type="text" placeholder="Номер телефона">
+					<br>
+					<br>
+					<br>
+					<button type="submit" class="booking-button">Отправить</button>		
+			</div>
+  </div>
 
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center px3 ">
