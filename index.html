@@ -8,7 +8,7 @@
   <meta name="amp-google-client-id-api" content="googleanalytics">
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-
+  <script async custom-element="amp-date-picker" src="https://cdn.ampproject.org/v0/amp-date-picker-0.1.js"></script>
 
   <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
@@ -2236,6 +2236,11 @@ input, .booking-form-time {
     cursor: pointer;
 	margin: 30px;
 }
+.all-center-block {
+	display: block;
+	margin: 0 0 50px 0;
+}
+
 </style>
 </head>
 <body>
@@ -2308,7 +2313,8 @@ input, .booking-form-time {
   </div>
 
   <main id="content" role="main">
-      <article class="px3">
+	  <div class="all-center-block">
+      <div class="px3">
             <h2 id="story" class="my4 theme2-anchored">История...</h2>
             <p class="mb1 ampstart-dropcap">На самом деле всё очень понятно... Выпивать каждый день - ОТЛИЧНО! Но делать это нужно грамотно... )) Для этого нужна компания, какая то минимальная закуска, которая обязательно должна быть интересная и хорошее настроение. Поэтому с возрастом ты понимаешь что вино это тот напиток, который может качественно совместить эти 3 характеристики для идеального завершения рабочего дня/недели. Эта идея возникла очень давно, но картинка постоянно дополнялась и улучшалась. Почему где-то на европейской улочке в среду в 19.00 после работы люди разной возрастной категории могут выпить бокал вина с парма-бутербродом или паштетом из кролика, возможно холодный апероль, ограничится 1-2 бокалами и с отличным настроением отправится домой...? При этом нужно оставить адекватную сумму, что б было приятно вернуться. 
               <br>
@@ -2337,7 +2343,6 @@ input, .booking-form-time {
               <p class="mb0">ул. Нестора Махно 57<br>+38 067 333 22 99<br></p>
               <p class="mb0">Воскресенье-Четверг с 10:00-23:00<br>Пятница-Суббота с 10:00-02:00<br></p>
 			</div>
-			
             <h2 id="gallery" class="my4 theme2-anchored">Галерея</h2>
             <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
             <amp-carousel class="my2 mxn3" height="345" layout="fixed-height" type="carousel">
@@ -2347,10 +2352,10 @@ input, .booking-form-time {
                 <amp-img src="https://instagram.fiev25-2.fna.fbcdn.net/vp/4d45699a5e57e1089f78682a281e42ec/5E26178F/t51.2885-15/sh0.08/e35/s640x640/67773116_931461947208598_1800519042630818876_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=110" width="345" height="345" alt=" " on="tap:lightbox" role="button" tabindex="0"></amp-img>
                 <amp-img src="https://instagram.fiev25-2.fna.fbcdn.net/vp/6bd19bf7eb2edf001f2b7f17e7cbcc65/5E5F12FC/t51.2885-15/sh0.08/e35/s640x640/58468642_422837771849584_4763783085923934365_n.jpg?_nc_ht=instagram.fiev25-2.fna.fbcdn.net&_nc_cat=104" width="345" height="345" alt=" " on="tap:lightbox" role="button" tabindex="0"></amp-img>
                 <amp-img src="https://instagram.fiev25-1.fna.fbcdn.net/vp/d5469ade960498bbfcbd34f9a0d7e7a0/5E432C0C/t51.2885-15/sh0.08/e35/s640x640/29737392_361550581015383_7406239101256466432_n.jpg?_nc_ht=instagram.fiev25-1.fna.fbcdn.net&_nc_cat=103" width="345" height="345" alt=" " on="tap:lightbox" role="button" tabindex="0"></amp-img>
-            </amp-carousel>
-
+			</amp-carousel>
 	  </article>
 	  <p><a name="booking"></a></p>
+	  </div>
   </main>
   <div class="pre-footer-block">
   <br>
@@ -2364,8 +2369,16 @@ input, .booking-form-time {
 					<input class="booking-inp" type="text" placeholder="Ваше имя">
 					<br>
 					<br>
-					<input type="text" placeholder="Дата">
-					<br>
+					<amp-date-picker clas
+    type="single"
+    mode="overlay"
+    layout="container"
+    format="MM/DD/YYYY"
+	week-day-format="ddd"
+	locale="ru"
+    input-selector="[name=date]">
+  <input type="text" name="date" placeholder="Дата">
+</amp-date-picker>
 					<br>
 					<select required="" class="booking-form-time">
 						<option>&nbsp;&ensp;Время</option>
