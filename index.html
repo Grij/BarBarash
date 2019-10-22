@@ -2260,7 +2260,7 @@ input, .booking-form-time {
     <ul class="list-reset m0 p0 ampstart-label">
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#">Главная</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="menu.html">Меню</a></li>
-          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#booking">Бронирование</a></li>
+          <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#booking-block">Бронирование</a></li>
           <li class="ampstart-nav-item "><a class="ampstart-nav-link" href="#locations">Контакты</a></li>
     </ul>
   </nav>
@@ -2359,28 +2359,29 @@ input, .booking-form-time {
   </main>
   <div class="pre-footer-block">
   <br>
-			<p><a name="booking"></a></p>
+			<p><a name="booking-block"></a></p>
 			<div class="booking">
 				<h3 class="mb1">Бронирование</h3>
 				<h4 class="mb1">Укажите интересующую вас дату, время
 					и количество гостей.</h4>
 					<br>
 					<br>
-					<input class="booking-inp" type="text" placeholder="Ваше имя">
+					<form action="mailto:8704421@gmail.com" enctype="multipart/form-data">
+					<input type="text" name="bName" placeholder="Ваше имя">
 					<br>
 					<br>
 					<amp-date-picker
-    type="single"
-    mode="overlay"
-    layout="container"
-    format="MM/DD/YYYY"
-	week-day-format="ddd"
-	locale="ru"
-    input-selector="[name=date]">
-  <input type="text" name="date" placeholder="Дата">
+                            type="single"
+                            mode="overlay"
+                            layout="container"
+                            format="MM/DD/YYYY"
+	                        week-day-format="ddd"
+	                        locale="ru"
+                            input-selector="[name=bDate]">
+                    <input type="text" name="bDate" placeholder="Дата">
 </amp-date-picker>
 					<br>
-					<select required="" class="booking-form-time">
+					<select required="" name="bTime" class="booking-form-time">
 						<option>&nbsp;&ensp;Время</option>
 								  <option value="18:00">&nbsp;&ensp;18:00</option>
 						<option value="18:30">&nbsp;&ensp;18:30</option>
@@ -2393,16 +2394,40 @@ input, .booking-form-time {
 										  </select>
 					<br>
 					<br>
-					<input type="text" placeholder="Количество гостей">
+					<input type="text" name="guestCount" placeholder="Количество гостей">
 					<br>
 					<br>
-					<input type="text" placeholder="Номер телефона">
+					<input type="text" name="bPhone" placeholder="Номер телефона">
 					<br>
 					<br>
 					<br>
-					<button type="submit" class="booking-button">Отправить</button>		
+					<button type="submit" class="booking-button">Отправить</button>	
+				</form>	
 			</div>
   </div>
+
+  <script>
+
+	function makeNewEvent() {
+		var form = collectFormData();
+		console.log(form);
+		var event = formateEvent(form.bName, form.bDate, form.bTime, form.guestCount, form.bPhone);
+		console.log(event);
+		addEventListener(event);
+	}
+	
+	function collectFormData() {
+		return {
+			'bName': document.getElementById('bName').value,
+			'bDate': document.getElementById('bDate').value,
+			'bTime': document.getElementById('bTime').value,
+			'guestCount': document.getElementById('guestCount').value,
+			'bPhone': document.getElementById('bPhone').value,
+		};
+		console.log(value);
+	}
+	
+	</script>
 
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center px3 ">
