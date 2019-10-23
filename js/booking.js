@@ -31,4 +31,7 @@ function collectFormData() {
 
 
 var calendarID - 'ev55f07gvphskq3uj9ismpp1g0@group.calendar.google.com';
-var serviceAccountID - 'ev55f07gvphskq3uj9ismpp1g0@group.calendar.google.com';
+var serviceAccountID - 'barbarash-admin@barbarash-booking.iam.gserviceaccount.com';
+
+
+
