@@ -9,8 +9,8 @@
   <script async="" src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <script async custom-element="amp-date-picker" src="https://cdn.ampproject.org/v0/amp-date-picker-0.1.js"></script>
-  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-  <script async="" src="js/add_event.js"></script>
+  <!-- <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+  <script async="" src="js/add_event.js"></script> -->
 
 
   <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate="">body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -2369,7 +2369,7 @@ input, .booking-form-time {
 					и количество гостей.</h4>
 					<br>
 					<br>
-					<form action="js/add_event.js" enctype="text/plain">
+					<form action="js/add_event.js" metod="post" enctype="text/plain">
 					<input type="text" name="bName" placeholder="Ваше имя">
 					<br>
 					<br>
@@ -2409,7 +2409,7 @@ input, .booking-form-time {
 			</div>
   </div>
 
-  <script>
+  <!-- <script>
 
 	function makeNewEvent() {
 		var form = collectFormData();
@@ -2430,7 +2430,7 @@ input, .booking-form-time {
 		console.log(value);
 	}
 	
-	</script>
+	</script> -->
 
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center px3 ">
