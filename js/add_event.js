@@ -1,10 +1,4 @@
-<div class="row">
-	<div class="col-md-2 col-sm-2 col-xs-12">
-		<button id="authorize-button" style="visibility: hidden" class="btn btn-primary">Authorize</button>
-    </div><!-- .col -->
-    
-    <div class="col-md-10 col-sm-10 col-xs-12">
-		<script type="text/javascript">
+
 			// date variables
 			var now = new Date();
 			today = now.toISOString();
@@ -91,18 +85,3 @@
 					});
 				});
 			}
-		</script>
-		<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-		
-		<div class="panel panel-danger" id="result-panel">
-			<div class="panel-heading">
-				<h3 class="panel-title" id="result-title">Application Not Authorized</h3>
-			</div><!-- .panel-heading -->
-			<div class="panel-body">
-				<p>Insert Event into Public Calendar&hellip;</p>
-				<div id="event-response"></div>
-			</div><!-- .panel-body -->
-		</div><!-- .panel -->
-		
-	</div><!-- .col -->
-</div><!-- .row -->
