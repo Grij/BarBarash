@@ -13,7 +13,7 @@
 			twoHoursLater = twoHoursLater.toISOString();
 			
 			// google api console clientID and apiKey (https://code.google.com/apis/console/#project:568391772772)
-			var clientId = 'YOUR_CLIENT_ID';
+			var clientId = '337518657426-0eibgfepp196enosf36dm8j0ki52equp.apps.googleusercontent.com';
 			var apiKey = '6a086d482aee043ce43c4ab91130d81518219d18';
 
 			// enter the scope of current project (this API must be turned on in the google console)
